@@ -9,6 +9,7 @@ import '../pages/admin/kelas/kelas_page.dart';
 import '../pages/admin/mapel/mata_pelajaran_page.dart';
 import '../pages/admin/jadwal/jadwal_pembelajaran_page.dart';
 import '../pages/admin/absensi/absensi_page.dart';
+import '../../../pages/kelola_absensi_page.dart'; // Added import for KelolaAbsensiPage
 import '../pages/profile_page.dart';
 import 'top_navbar.dart';
 
@@ -32,13 +33,13 @@ class _MainLayoutState extends State<MainLayout> {
       _pages = [
         DashboardAdminPage(),
         MasterMenuPage(), // <--- Ini Master Menu Page baru
-        AbsensiPage(),
+        KelolaAbsensiPage(),
         ProfilPage(), // opsional
       ];
       _items = [
         const BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: 'Dashboard'),
         const BottomNavigationBarItem(icon: Icon(Icons.menu_book), label: 'Master'),
-        const BottomNavigationBarItem(icon: Icon(Icons.how_to_reg), label: 'Riwayat Absensi'),
+        const BottomNavigationBarItem(icon: Icon(Icons.how_to_reg), label: 'Absensi'),
         const BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profil'),
       ];
     } else {
